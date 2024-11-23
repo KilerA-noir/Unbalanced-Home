@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Unbalanced HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unbalanced Home">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/openclose.js"></script>
+<script src="../../js/fixmenu_pagetop.js"></script>
+<script src="../../js/storyopen.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="../index.html"><img src="../../images/logo.png" alt="Unbalanced"></a></h1>
+<nav id="menubar">
+	<ul>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li class="current"><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+	</header>
+	
+	<nav id="menubar-s">
+	<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+
+<div id="contents">
+
+<section>
+<h3><a href="map_nothernLavalleContinent.html">ラバーレ大陸北部</a></h3>
+<ul id="story-list">
+	<li onclick="showStoryContent('碧海の神殿', '../../images/test.jpg', '　海王の杖が収められた神殿。最奥が海につながっており、古くから海を渡る人々に利用されていた。今では、レクシオ＝ルエーガーによって、風穴が開けられ、蛮族の住処となっている。')"><a>碧海の神殿</a></li>
+</ul>
+
+<div id="story-content">
+    <img id="story-image" src="../../images/test.jpg" alt="">
+	<ul>
+		<li><p id="story-title">地域の特色</p></li>
+		<li><p id="story-text">　人があまりやってこない未開拓地域。大陸全体には魔力を帯びた森が広がり、遺跡も数多く存在すると思われるが、今、確認できているのは、手前の岬に建てられた碧海の神殿のみである。</p></li>
+	</ul>
+</div>
+
+</section>
+
+<p><a href="javascript:history.back()">&lt;&lt; BACK</a></p>
+
+</div>
+<!--/#contents-->
+
+<footer>
+	<small><a href="index.html">Unbalanced Home made by KilerA</a></small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>

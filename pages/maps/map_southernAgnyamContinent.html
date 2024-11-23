@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Unbalanced HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unbalanced Home">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/openclose.js"></script>
+<script src="../../js/fixmenu_pagetop.js"></script>
+<script src="../../js/storyopen.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="../index.html"><img src="../../images/logo.png" alt="Unbalanced"></a></h1>
+<nav id="menubar">
+	<ul>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li class="current"><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+	</header>
+	
+	<nav id="menubar-s">
+	<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+
+<div id="contents">
+
+<section>
+<h3><a href="map_southernAgnyamContinent.html">アグニァム大陸南部</a></h3>
+<ul id="story-list">
+	<li onclick="showStoryContent('', '../../images/map/map7-1.jpg', '　メギトバ王国が、アグニァム大陸の調査のために建設した港。現地にもとから存在する村との連絡を保っている。<br><br>　関連シナリオ→<a href=\'../stories/story2.html\'>２章５話 大冒険団遠征</a>')"><a>ライラ港</a></li>
+	<li onclick="showStoryContent('', '../../images/map/map7-2.jpg', '　ヴァルフレア火山のふもとにある村。噴火が起きれば、直ちに飲み込まれてしまう場所に位置するため、村民たちは毎日レイ＝ヴァルフレアの様子を伺いつつ、暮らしている。<br><br>　関連シナリオ→<a href=\'../stories/story2.html\'>２章５話 大冒険団遠征</a>')"><a>グレイズ村</a></li>
+	<li onclick="showStoryContent('', '../../images/map/map7-3.jpg', '　ヴァルフレア火山の中腹にある小さな村。頂上にある神殿の黄金の像を管理している。<br><br>　関連シナリオ→<a href=\'../stories/story2.html\'>２章６話 陶酔の絨毯</a>')"><a>カエサル村</a></li>
+	<!--<li onclick="showStoryContent('雷帝の神殿', '../../images/map/map7-4.jpg', '　')"><a>雷帝の神殿</a></li>-->
+	<li onclick="showStoryContent('ヴァルフレア火山', '../../images/map/map7-5.jpg', '　レイ＝ヴァルフレアが生息する火山。過去には大噴火を起こし、アグニァム大陸全土に火山灰が降り積もったこともあるという。しかし、最近は常に頂上付近は炎がメラメラとたぎっているものの、噴火は起きていない。<br><br>　関連シナリオ→<a href=\'../stories/story2.html\'>２章６話 陶酔の絨毯</a>')"><a>ヴァルフレア火山</a></li>
+	<!--<li onclick="showStoryContent('篝火の祠', '../../images/map/map7-6.jpg', '　')"><a>篝火の祠</a></li>-->
+</ul>
+
+<div id="story-content">
+    <img id="story-image" src="../../images/map/map7.jpg" alt="">
+	<ul>
+		<li><p id="story-title">地域の特色</p></li>
+		<li><p id="story-text">　レイ＝ヴァルフレアの棲む火山のある地域。その噴火による被害を受けることもあり、炎を信仰する文化が根付いている。小さな村が点在するばかりで大きな町は存在しないが、港ができたことで、ヴァレンス大陸との情報のやり取りも行われるようになった。</p></li>
+	</ul>
+</div>
+
+</section>
+
+<p><a href="javascript:history.back()">&lt;&lt; BACK</a></p>
+
+</div>
+<!--/#contents-->
+
+<footer>
+	<small><a href="index.html">Unbalanced Home made by KilerA</a></small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	</footer>
+	
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>

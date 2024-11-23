@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Unbalanced HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unbalanced Home">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/openclose.js"></script>
+<script src="../../js/fixmenu_pagetop.js"></script>
+<script src="../../js/storyopen.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="../index.html"><img src="../../images/logo.png" alt="Unbalanced"></a></h1>
+<nav id="menubar">
+	<ul>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li class="current"><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+	</header>
+	
+	<nav id="menubar-s">
+	<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+	<li><a href="../story.html">Story</a></li>
+	<li><a href="../character.html">Character</a></li>
+	<li><a href="../world.html">World</a></li>
+	</ul>
+	</nav>
+
+<div id="contents">
+
+<section>
+<h3><a href="map_nothernFleurContinent.html">フルール大陸北部</a></h3>
+<ul id="story-list">
+	<li onclick="showStoryContent('エッダ村', '../../images/map/map6-1.jpg', '　変わり者の集まる村。あまり趣味の合わない人も、この村に来ると１人は気の合う人がいるといわれている。この村の近くで、蛮族に襲われたところをルーザー＝エレルデンに助けられている。')"><a>エッダ村</a></li>
+	<li onclick="showStoryContent('モラン町', '../../images/map/map6-2.jpg', '　七星列島とフルール大陸をつなぐ港町。多くの住民と冒険者が街にあふれ、にぎやかな光景がひろがっている。マップ・ディスプレイヤーに登録するためのフルール大陸の地図をここで購入している。<br><br>　関連シナリオ→<a href=\'../stories/story0.html\'>序章５話 マップ表示装置')"><a>モラン町</a></li>
+	<li onclick="showStoryContent('ルリエ村', '../../images/map/map6-3.jpg', '　近くにデイル川とウェストバリーの森がある自然豊かな村。')"><a>ルリエ村</a></li>
+	<li onclick="showStoryContent('カータレット伯爵領', '../../images/map/map6-4.jpg', '　カータレット家が治める自治領。最高位の指導者メヴィウス＝カータレット伯爵により、統制された軍隊ブラッドレッドが存在している。')"><a>カータレット伯爵領</a></li>
+	<li onclick="showStoryContent('ブリス島', '../../images/map/map6-5.jpg', '　カームオーシャンに浮かぶ島。静かな環境と時折吹く潮風が釣り人たちに人気である。')"><a>ブリス島</a></li>
+	<li onclick="showStoryContent('カームオーシャン', '../../images/map/map6-6.jpg', '　ヴァレンス大陸とフルール大陸の間に位置する穏やかな海。近海の主と呼ばれる魔物が棲んでいるが、普段は襲いかかってくることはない。しかしながら、七星列島を出た際、途中で近海の主に襲われている。その姿はタコに似ており、クラーケンの亜種と言われている。<br><br>　関連シナリオ→<a href=\'../stories/story0.html\'>序章６話 近海の主</a>')"><a>カームオーシャン</a></li>
+	<li onclick="showStoryContent('七星列島', '../../images/map/map6-7.jpg', '　カームオーシャンを挟んだ位置にある六つの島。他の大陸の人々にはあまり知られていない小規模な地域。<br><br>　詳細はこちら→<a href=\'map_sevenStarsArchipelago.html\'>七星列島</a>')"><a>七星列島</a></li>
+</ul>
+
+<div id="story-content">
+    <img id="story-image" src="../../images/map/map6.jpg" alt="">
+	<ul>
+		<li><p id="story-title">地域の特色</p></li>
+		<li><p id="story-text">　自然豊かな土地に様々な人々が集う地域。それぞれの町や村の間に交流は少なく、各々が自分に合う土地に住み着いている。特に、北端にはカータレット家が統治する領土があり、極秘の計画が水面下で動いていると言われている。</p></li>
+	</ul>
+</div>
+
+</section>
+
+<p><a href="javascript:history.back()">&lt;&lt; BACK</a></p>
+
+</div>
+<!--/#contents-->
+
+<footer>
+	<small><a href="index.html">Unbalanced Home made by KilerA</a></small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>

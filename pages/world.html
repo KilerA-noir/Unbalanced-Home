@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Unbalanced HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unbalanced Home">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/openclose.js"></script>
+<script src="../js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="../images/logo.png" alt="Unbalanced"></a></h1>
+<nav id="menubar">
+	<ul>
+	<li><a href="news.html">News</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="story.html">Story</a></li>
+	<li><a href="character.html">Character</a></li>
+	<li class="current"><a href="world.html">World</a></li>
+	</ul>
+	</nav>
+	</header>
+	
+	<nav id="menubar-s">
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="news.html">News</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="story.html">Story</a></li>
+	<li><a href="character.html">Character</a></li>
+	<li><a href="world.html">World</a></li>
+	</ul>
+	</nav>
+
+<div id="contents">
+
+<section>
+
+<h2>世界地図<span>World</span></h2>
+<div class="list">
+<!--<a href="maps/map_nothernLavalleContinent.html">-->
+<figure><img src="../images/nomap.jpg" alt=""></figure>
+<h4>???<!--ラバーレ大陸北部--></h4>
+</div>
+
+<div class="list">
+<!--<a href="maps/map_nothernVailendroffContinent.html">-->
+<figure><img src="../images/nomap.jpg" alt=""></figure>
+<h4>???<!--ベーレンドロフ大陸北部--></h4>
+</div>
+
+<div class="list">
+<!--<a href="maps/map_southernVailendroffContinent.html">-->
+<figure><img src="../images/nomap.jpg" alt=""></figure>
+<h4>???<!--ベーレンドロフ大陸南部--></h4>
+</div>
+
+<div class="list">
+<!--<a href="maps/map_aroundMellorsStrait.html">-->
+<figure><img src="../images/nomap.jpg" alt=""></figure>
+<h4>???<!--メラーズ海峡周辺--></h4>
+</a>
+</div>
+
+<div class="list">
+<a href="maps/map_nothernValenceContinent.html">
+<figure><img src="../images/map/map5.jpg" alt=""></figure>
+<h4>ヴァレンス大陸北部</h4>
+</a>
+</div>
+
+<div class="list">
+<a href="maps/map_nothernFleurContinent.html">
+<figure><img src="../images/map/map6.jpg" alt=""></figure>
+<h4>フルール大陸北部</h4>
+</a>
+</div>
+
+<div class="list">
+<a href="maps/map_southernAgnyamContinent.html">
+<figure><img src="../images/map/map7.jpg" alt=""></figure>
+<h4>アグニァム大陸南部</h4>
+</a>
+</div>
+	
+<div class="list">
+<a href="maps/map_southernValenceContinent.html">
+<figure><img src="../images/map/map8.jpg" alt=""></figure>
+<h4>ヴァレンス大陸南部</h4>
+</a>
+</div>
+
+<div class="list">
+<a href="maps/map_southernFleurContinent.html">
+<figure><img src="../images/map/map9.jpg" alt=""></figure>
+<h4>フルール大陸南部</h4>
+</a>
+</div>
+
+</section>
+
+</div>
+<!--/#contents-->
+
+<footer>
+	<small><a href="index.html">Unbalanced Home made by KilerA</a></small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>
