@@ -873,6 +873,10 @@ ol {
 	display: block;
 }
 
+# story-content ul {
+	width: 100%;
+}
+
 #story-image {
 	width: 100%;
 	height: auto;
